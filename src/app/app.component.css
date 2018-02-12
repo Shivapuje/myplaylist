@@ -1,0 +1,110 @@
+  .background-image {
+    background-image: url("/assets/images/sunset.jpg");
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    opacity: 0.9;
+  }
+
+  .background-color {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 201, 255, 0.5)), to(rgba(106, 48, 147, 0.5)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 201, 255, 0.5), rgba( 106, 48, 147, 0.5));
+    background-image: -moz-linear-gradient(top, rgba(0, 201, 255, 0.5), rgba( 106, 48, 147, 0.5));
+    background-image: linear-gradient(to bottom, rgba(0, 201, 255, 0.5), rgba( 106, 48, 147, 0.5));
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(106, 48, 147, 0.7)), to(rgba(0, 201, 255, 0.6)));
+    background-image: -webkit-linear-gradient(top, rgba(106, 48, 147, 0.7), rgba(0, 201, 255, 0.6));
+    background-image: -moz-linear-gradient(top, rgba(106, 48, 147, 0.685), rgba(0, 201, 255, 0.6));
+    background-image: linear-gradient(to bottom, rgba(106, 48, 147, 0.7), rgba(0, 201, 255, 0.6));
+    border-radius: 0.5em;
+    height: 92%;
+    width: 96%;
+    box-shadow: 0.1em 0.1em 10em rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #mainSidebar {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(106, 48, 147, 1.0)), to(rgba(0, 201, 255, 1.0)));
+    background-image: -webkit-linear-gradient(top, rgba(106, 48, 147, 1.0), rgba(0, 201, 255, 1.0));
+    background-image: -moz-linear-gradient(top, rgba(106, 48, 147, 1.0), rgba(0, 201, 255, 1.0));
+    background-image: linear-gradient(to bottom, rgba(106, 48, 147, 1.0), rgba(0, 201, 255, 1.0));
+    opacity: 0.5;
+  }
+
+  .hr {
+    border: rgba(0, 201, 255, 0.5) solid 0.05em;
+    width: 76%;
+    right: 12%;
+  }
+
+  .logo-header {
+    font-family: 'Vollkorn SC', serif;
+    font-size: 36px !important;
+    color: rgba(0, 201, 255, 0.9);
+    text-shadow: 1px 1px 1px rgba(106, 48, 147, 0.9);
+  }
+
+  .sub-header {
+    font-family: 'Vollkorn SC', serif;
+    font-size: 30px !important;
+    color: rgba(0, 201, 255, 0.9);
+    text-shadow: 1px 1px 1px rgba(106, 48, 147, 0.9);
+  }
+
+  .sub.menu {
+    box-shadow: 0 0 0 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .column-padding {
+    padding-right: 1em;
+    padding-left: 5em;
+  }
+
+  .column-header {
+    font-size: 28px;
+    color: rgba(255, 48, 147, 0.9);
+    text-shadow: 0.01em 0.01em 0.1em rgba(255, 55, 0, 0.9);
+  }
+
+  .slogan {
+    width: 50%;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-left: 25%;
+  }
+
+  .description {
+    font-family: 'Exo 2', cursive;
+    font-size: 15px;
+    color: whitesmoke;
+  }
+
+  .get-started {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .greetings {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }

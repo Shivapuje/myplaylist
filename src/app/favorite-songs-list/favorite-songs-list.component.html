@@ -1,0 +1,32 @@
+<h2 class="ui header">My favorite songs</h2>
+<hr class="ui blue divider">
+<table class="ui center selectable aligned basic table" *ngIf="(favoriteSongs | async)?.length > 0; else emptyList;">
+  <thead>
+    <tr>
+      <th>Song Title</th>
+      <th>Artist</th>
+      <th>Album</th>
+      <th>Genre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let song of favoriteSongs | async" (click)="showSong(song)">
+      <td>{{song.songTitle}}</td>
+      <td>{{song.artist}}</td>
+      <td>{{song.album}}</td>
+      <td>{{song.genre}}</td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #emptyList>
+  <div class="ui compact message">
+    <div class="header">
+      <i class="theme icon"></i>
+      No songs to display
+    </div>
+    <p class="content">
+      You still haven't added any songs to our playlist.
+    </p>
+  </div>
+
+</ng-template>

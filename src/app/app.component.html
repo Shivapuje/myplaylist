@@ -1,0 +1,61 @@
+<div class="background-image">
+  <div class="background-color">
+    <div class="ui right vertical inverted sidebar labeled icon menu" id="mainSidebar">
+      <a class="item">
+        <i class="home icon"></i>
+        Home
+      </a>
+      <a class="item">
+        <i class="block layout icon"></i>
+        Topics
+      </a>
+      <a class="item">
+        <i class="smile icon"></i>
+        Friends
+      </a>
+    </div>
+    <div class="ui container" style="margin: 2% !important;" *ngIf="afAuth.authState | async; let user; else beforeLogin">
+      <div class="ui large borderless sub menu">
+        <a class="item" (click)="toggleSidebar()">
+          <i class="blue sidebar icon"></i>
+        </a>
+        <div class="right menu">
+          <div class="item">
+            <div class="ui small circular basic inverted blue button" (click)="addSongModal()">Add Song</div>
+          </div>
+          <a class="item" (click)="logout()">
+            <i class="red power icon"></i>
+          </a>
+        </div>
+      </div>
+      <div class="ui divided stackable mobile reversed grid" style="width:100%;">
+        <div class="eight wide column">
+          <app-favorite-songs-list></app-favorite-songs-list>
+        </div>
+
+        <div class="eight wide center aligned column">
+          <img class="ui centered tiny circular image" src="{{user.photoURL}}" alt="{{user.displayName}}">
+          <div class="ui hidden divider"></div>
+          <div class="greetings">Greetings, {{user.displayName}},</div>
+          <h4 class="get-started">Welcome to
+            <i class="sub-header">Myplaylist</i>
+          </h4>
+          <hr class="hr">
+          <div class="ui hidden divider"></div>
+          <app-show-song-details></app-show-song-details>
+        </div>
+
+      </div>
+    </div>
+    <ng-template #beforeLogin>
+      <app-before-login></app-before-login>
+    </ng-template>
+    <div class="ui modal" id="addNewSongModal">
+      <i class="red close icon"></i>
+      <div class="header">Add new song</div>
+      <div class="content">
+        <app-add-new-song></app-add-new-song>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.ui.message {
+  margin-left: 1%;
+  background: rgba(121, 29, 145, 0.2);
+  border: 1px solid rgb(121, 29, 145);
+  color: rgb(87, 237, 248);
+}
+
+.ui.header {
+  margin-left: 1%;
+  color: rgb(87, 237, 248);
+}
+
+.blue.divider {
+  background: rgb(87, 237, 248);
+}
+
+.ui.table {
+  margin-left: 1%;
+  background: rgba(121, 29, 145, 0.2);
+  border: 1px solid rgb(121, 29, 145);
+  color: rgb(87, 237, 248);
+}

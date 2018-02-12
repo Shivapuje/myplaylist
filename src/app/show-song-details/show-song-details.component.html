@@ -1,0 +1,16 @@
+<div class="ui fluid basic segment">
+  <div class="ui centered card">
+    <div class="content">
+      <div class="ui right floated tiny button">Edit</div>
+      <div class="header">{{song.songTitle}}</div>
+      <div class="meta">{{song.album}}</div>
+      <div class="description">
+        Genre : {{song.genre}}
+      </div>
+    </div>
+    <div class="ui bottom attched button" (click)="playSong(song.url)">
+      <i class="red play icon"></i>
+      Play
+    </div>
+  </div>
+</div>

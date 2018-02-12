@@ -1,0 +1,9 @@
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:200i|Slabo+27px|Barlow+Condensed|Vollkorn+SC|Exo+2');
+
+  body {
+    font-family: 'Barlow Condensed', sans-serif !important;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
